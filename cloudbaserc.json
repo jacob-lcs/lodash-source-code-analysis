@@ -5,7 +5,7 @@
   "functionRoot": "./functions",
   "functions": [],
   "framework": {
-    "name": "vuepress-app",
+    "name": "lodash-source-code-analysis",
     "plugins": {
       "vuepress": {
         "use": "@cloudbase/framework-plugin-website",
