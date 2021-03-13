@@ -35,6 +35,14 @@ module.exports = {
           ['/array/slice', '_.slice']
         ]
       },
+      {
+        title: '语言',   // 必要的
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          ['/lang/toInteger', '_.toInteger'],
+          ['/lang/toFinite', '_.toFinite']
+        ]
+      },
     ],
     docsBranch: 'main'
   },

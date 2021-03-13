@@ -24,7 +24,7 @@ function chunk(array, size = 1) {
 }
 ```
 
-该函数比较简单，lodash 对传入的参数做兜底处理，首先使用 [toInteger](./toInteger) 确保 size 为整数，如果用户传入 `1.3` 的话将当做 `2` 处理，除此之外还会判断 `array` 的长度，当 `!length || size<1` 成立时，直接返回空数组，不进行下面的计算。
+该函数比较简单，lodash 对传入的参数做兜底处理，首先使用 [toInteger](../lang/toInteger) 确保 size 为整数，如果用户传入 `1.3` 的话将当做 `2` 处理，除此之外还会判断 `array` 的长度，当 `!length || size<1` 成立时，直接返回空数组，不进行下面的计算。
 
 如果传入的采纳数符合上述条件，将会计算该 `array` 可以按照 `size` 分为多少个数组，此处采取 `Math.ceil` 方法进行向上取整。举个例子，如果传入的 `array` 长度为 5，size 为 2，那么就可以分为 3 个数组。计算完成后，接下来调用内部 [slice](./slice) 方法（类似于 `Array.prototype.slice`，但是 [slice](./slice) 方法可以保证正确的返回）在 while 循环内对 array 进行分割，存储分割结果到 result 中，最后将 result 返回。
 
