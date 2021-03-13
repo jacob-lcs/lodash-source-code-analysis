@@ -35,7 +35,8 @@ module.exports = {
           ['/array/slice', '_.slice']
         ]
       },
-    ]
+    ],
+    docsBranch: 'main'
   },
   evergreen: true,
   plugins: ['@vuepress/back-to-top', '@vuepress/nprogress', '@vuepress/active-header-links']
