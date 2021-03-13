@@ -19,7 +19,6 @@ jobs:
       - name: Deploy to Tencent CloudBase
         uses: TencentCloudBase/cloudbase-action@v2
         with:
-          secretId: ${{secrets.secretId}}
-          secretKey: ${{secrets.secretKey}}
-          envId: ${{secrets.envId}}
-          staticSrcPath: .vuepress/dist
+          secretId: ${{ secrets.secretId }}
+          secretKey: ${{ secrets.secretKey }}
+          envId: ${{ secrets.envId }}
