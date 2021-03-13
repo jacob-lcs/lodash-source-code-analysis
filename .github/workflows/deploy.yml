@@ -22,3 +22,4 @@ jobs:
           secretId: ${{secrets.secretId}}
           secretKey: ${{secrets.secretKey}}
           envId: ${{secrets.envId}}
+          staticSrcPath: .vuepress/dist
