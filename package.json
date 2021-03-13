@@ -11,6 +11,7 @@
   "author": "Jacob<jacob.lcs@qq.com>",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-nprogress": "^1.8.2",
     "vuepress": "^1.5.0"

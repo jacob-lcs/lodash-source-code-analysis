@@ -31,11 +31,12 @@ module.exports = {
         title: '数组',   // 必要的
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          ['/array/chunk', '_.chunk']
+          ['/array/chunk', '_.chunk'],
+          ['/array/slice', '_.slice']
         ]
       },
     ]
   },
   evergreen: true,
-  plugins: ['@vuepress/back-to-top', '@vuepress/nprogress']
+  plugins: ['@vuepress/back-to-top', '@vuepress/nprogress', '@vuepress/active-header-links']
 };
