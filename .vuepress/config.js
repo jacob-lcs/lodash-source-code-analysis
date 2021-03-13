@@ -9,7 +9,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
-      { text: "源码解析", link: "/analysis/" },
+      { text: "源码解析", link: "/introduce/" },
       {
         text: '查看更多',
         ariaLabel: 'see more',
@@ -23,7 +23,18 @@ module.exports = {
     repoLabel: '查看源码',
     smoothScroll: true,
     lastUpdated: 'Last Updated',
-    editLinkText: '帮助我们改善此页面！'
+    editLinkText: '帮助我们改善此页面！',
+    editLinks: true,
+    sidebar: [
+      ['/introduce/', '简介'],
+      {
+        title: '数组',   // 必要的
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          ['/array/chunk', '_.chunk']
+        ]
+      },
+    ]
   },
   evergreen: true,
   plugins: ['@vuepress/back-to-top', '@vuepress/nprogress']
