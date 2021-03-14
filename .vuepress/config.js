@@ -50,5 +50,5 @@ module.exports = {
     docsBranch: 'main'
   },
   evergreen: true,
-  plugins: ['@vuepress/back-to-top', '@vuepress/nprogress', '@vuepress/active-header-links']
+  plugins: ['@vuepress/back-to-top', '@vuepress/nprogress', '@vuepress/active-header-links', ['@dovyp/vuepress-plugin-clipboard-copy', true]]
 };
