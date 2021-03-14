@@ -40,7 +40,10 @@ module.exports = {
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           ['/lang/toInteger', '_.toInteger'],
-          ['/lang/toFinite', '_.toFinite']
+          ['/lang/toFinite', '_.toFinite'],
+          ['/lang/toNumber', '_.toNumber'],
+          ['/lang/isObject', '_.isObject'],
+          ['/lang/isSymbol', '_.isSymbol']
         ]
       },
     ],
