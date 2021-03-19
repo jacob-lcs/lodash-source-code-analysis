@@ -28,22 +28,26 @@ module.exports = {
     sidebar: [
       ['/introduce/', '简介'],
       {
-        title: '数组',   // 必要的
-        sidebarDepth: 1,    // 可选的, 默认值是 1
+        title: '数组',
         children: [
           ['/array/chunk', '_.chunk'],
           ['/array/slice', '_.slice']
         ]
       },
       {
-        title: '语言',   // 必要的
-        sidebarDepth: 1,    // 可选的, 默认值是 1
+        title: '语言',
         children: [
           ['/lang/toInteger', '_.toInteger'],
           ['/lang/toFinite', '_.toFinite'],
           ['/lang/toNumber', '_.toNumber'],
           ['/lang/isObject', '_.isObject'],
           ['/lang/isSymbol', '_.isSymbol']
+        ]
+      },
+      {
+        title: '内部函数',
+        children: [
+          ['/internal/getTag', 'getTag'],
         ]
       },
     ],
