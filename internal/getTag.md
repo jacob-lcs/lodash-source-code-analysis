@@ -2,7 +2,7 @@
 
 该函数为 lodash 内部封装的公用方法，并没有向外暴露。
 
-该函数是返回 object 类型 value 的 toString 值。因为 undefined 与 null 没有 toString 方法，因此将其进行特殊处理。
+该函数是返回 value 的 toString 值。
 
 ```js
 const toString = Object.prototype.toString
